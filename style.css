@@ -388,6 +388,8 @@ works
       "... works1 ..."
       "... ...... ..."50px
       "... works2 ..."
+      "... ...... ..." 
+      "... works3 ..."
       "... ...... ..."50px
       /8% 1fr 8% ;
   }
@@ -397,23 +399,29 @@ works
   .m-works2{
     grid-area: works2;
 }
+.m-works3{
+      grid-area: works3;
+  }
 
   .m-works1-content,
-  .m-works2-content{
+  .m-works2-content,
+  .m-works3-content{
       height: 300px;
       overflow: scroll;
       margin-bottom: 30px;
   }
 
   .m-works1 ul,
-  .m-works2 ul{
+  .m-works2 ul
+  .m-works3 ul{
     list-style: none;
     margin: 0;
     padding-left: 0;
   }
 
   .m-works1 li,
-  .m-works2 li{
+  .m-works2 li,
+  .m-works3 li{
     border-bottom: 1px solid;
     padding: 5px;
   }
