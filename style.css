@@ -480,6 +480,7 @@ contact
     background-size: 200% auto;
     transition: .3s;
     color: grey;
+    background-color: white;
 }
 
 .contact button:hover{
@@ -549,6 +550,7 @@ contact
     background-size: 200% auto;
     transition: .3s;
     color: grey;
+    background-color: white;
 }
 
 .m-contact button:hover{
