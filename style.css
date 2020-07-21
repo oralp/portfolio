@@ -129,7 +129,7 @@ nav a {
       position: fixed;
       bottom: 6%;
       right: 4%;
-      font-size: 2em;
+      font-size: 4em;
       z-index: 100;
       cursor: pointer;
   }
