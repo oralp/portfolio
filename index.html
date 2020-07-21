@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+    <title>Portfolio</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    <script>
+    jQuery(document).ready(function() {
+    var offset = 100;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+    if (jQuery(this).scrollTop() > offset) {
+    jQuery('.page-top').fadeIn(duration);
+    } else {
+    jQuery('.page-top').fadeOut(duration);
+    }
+    });
+
+    jQuery('.paget-op').click(function(event) {
+    event.preventDefault();
+    jQuery('html, body').animate({scrollTop: 0}, duration);
+    return false;
+    })
+    });
+    </script>
+
+</head>
+<body class="home">
+    <header>
+        <div class="header-top">
+            <p>WebSite Design</p>
+            <h1>Shimatate's WebSite</h1>
+            <p>Web制作に関することはお気軽にご相談ください</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <!-- <li><a href="service.html">Service</a></li> -->
+            <li><a href="works.html">Works</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="page-top">
+        <a href="#">
+            ☝︎
+        </a>
+    </div>
+    <main>
+        <div class="about">
+            <div class="about-head">
+                <h2>
+                    <div class="about-top">ABOUT</div>
+                    <div class="about-bottom">自己紹介</div>
+                </h2>
+            </div>
+            <div class="about-body">
+                <div class="about-body2">
+                    <p>
+                        ポートフォリオをご覧いただきありがとうございます。<br>
+                        <br>
+                        現在は大学4年生で、将来的にフリーランスとして働くことを目標にしております。<br>
+                        <br>
+                        Web制作に関してはサイトを制作して終わりではなく、お客様の目的を一緒に達成していけるよう、SEOや広告などのマーケティングについても学習を進めております。<br>
+                        <br>
+                        Web制作を通じて皆様のお役に立ちたいと考えているので、ぜひお気軽にご連絡ください。
+                    </p>
+                </div>
+                <dl class="about-body1">
+                    <dt>Name</dt>
+                    <dd>シマタテ　ホノカ(Shimatate Honoka)</dd>
+                    <dt>skills</dt>
+                    <dd>HTML/CSS・JavaScript・PHP・Wordpress</dd>
+                    <dt>hoby</dt>
+                    <dd>エレキギター/ゲーム（RPG）/読書</dd>
+                    <dt>mail</dt>
+                    <dd>
+                        oralp0119★gmail.com<br>
+                        (★は@に変換してご連絡ください。)
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="service">
+            <div class="service-head">
+                <h2>
+                    <div class="service-top">SERVICE</div>
+                    <div class="service-bottom">サービス内容</div>
+                </h2>
+            </div>
+            <div class="service1">
+                <div class="service-name">
+                    <img src="img/desktop.png">
+                    <p class="text-top">CODING</p>
+                    <p class="text-bottom">Webサイト制作</p>
+                </div>
+                <p>お客様のご要望に合わせて、HTML/CSS/JavaScript等を用いたWebサイトを作成致します。柔軟に対応いたしますので、お気軽にご相談ください。</p>
+            </div>
+            <div class="service2">
+                <div class="service-name">
+                    <img src="img/smartphone.png">
+                    <p class="text-top">RESPONSIVE</p>
+                    <p class="text-bottom">レスポンシブ対応</p>
+                </div>
+                <p>PC、タブレット、スマートフォンなど、異なる画面サイズに対応可能。それぞれの画面に最適な表示に調整します。</p>
+            </div>
+            <div class="service3">
+                <div class="service-name">
+                    <img src="img/hourglass.png">
+                    <p class="text-top">MAINTENANCE</p>
+                    <p class="text-bottom">保守・修正</p>
+                </div>
+                <p>「作って終わり」には決して致しません。納品後も修正・変更等のアフターフォローを提供します。</p>
+            </div>
+            <!-- <div class="service-button">
+                <a href="service.html">
+                    <button　type="button">サービス内容一覧</button>
+                </a>
+            </div> -->
+        </div>
+        <div class="works">
+            <div class="works-head">
+                <h2>
+                    <div class="works-top">WORKS</div>
+                    <div class="works-bottom">実績</div>
+                </h2>
+            </div>
+            <div class="works-body">
+                <div class="test1">
+                    <a href="works.html#works1">
+                        <img src="img/test1.png" alt="test1">
+                    </a>
+                </div>
+                <div class="test2">
+                    <a href="works.html#works2">
+                        <img src="img/test2.png" alt="test2">
+                    </a>
+                </div>
+            </div>
+            <div class="works-button">
+                <a href="works.html">
+                    <button　type="button">実績一覧</button>
+                </a>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="contact-head">
+                <h2>
+                    <div class="contact-top">CONTACT</div>
+                    <div class="contact-bottom">ご依頼・お問い合わせ</div>
+                </h2>
+            </div>
+            <div class="contact-body">
+                <p>制作のご依頼・ご相談などお気軽にご連絡ください。</p>
+                <br>
+                <br>
+                <div class="form">
+                    <!-- class, action, methodを変更しないでください -->
+                    <form class="formrun" action="https://form.run/api/v1/r/ojqw6ovq9eolwqobsqaxc7i9" method="post">
+                        <!-- ↓自由に要素を追加・編集することができます -->
+                        <div class="name formbox">
+                            <label>お名前</label>
+                            <input name="お名前" type="text">
+                        </div>
+                    
+                        <div class="mail formbox">
+                            <label>メールアドレス [必須]</label>
+                            <input name="メールアドレス" id="mail" type="text" data-formrun-type="email" data-formrun-required>
+                            <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+                        </div>
+                    
+                        <div class="contentbox formbox">
+                            <label>お問い合わせ [必須]</label>
+                            <textarea name="お問い合わせ" data-formrun-required></textarea>
+                            <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
+                        </div>
+                    
+                        <!-- <div>
+                        <label>個人情報利用同意 [必須]</label>
+                        <input type="checkbox" name="個人情報利用同意" data-formrun-required>
+                        <div data-formrun-show-if-error="個人情報利用同意">同意してください</div>
+                        </div> -->
+                    
+                        <!-- ボット投稿をブロックするためのタグ -->
+                        <div class="_formrun_gotcha">
+                            <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
+                            <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+                            <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+                        </div>
+                    
+                        <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        2020 Shimatate's Portfolio Website
+    </footer>
+</body>
+</html>
+

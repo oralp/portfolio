@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+    <title>Portfolio</title>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    <script>
+    jQuery(document).ready(function() {
+    var offset = 100;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+    if (jQuery(this).scrollTop() > offset) {
+    jQuery('.page-top').fadeIn(duration);
+    } else {
+    jQuery('.page-top').fadeOut(duration);
+    }
+    });
+
+    jQuery('.paget-op').click(function(event) {
+    event.preventDefault();
+    jQuery('html, body').animate({scrollTop: 0}, duration);
+    return false;
+    })
+    });
+    </script>
+</head>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="works.html">Works</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<div class="page-top">
+    <a href="#">
+        ☝︎
+    </a>
+</div>
+<body class="m-service">
+    <div class="service-head">
+        <h2>
+            <div class="service-top">SERVICE</div>
+            <div class="service-bottom">サービス内容</div>
+        </h2>
+    </div>
+    <div class="m-service-body">
+        <div class="m-service1">
+            <div class="service-name">
+                <img src="img/desktop.png">
+                <p class="text-top">CODING</p>
+                <p class="text-bottom">Webサイト制作</p>
+            </div>
+            <p>お客様のご要望に合わせて、HTML/CSS/JavaScript等を用いたWebサイトを作成致します。柔軟に対応いたしますので、お気軽にご相談ください。</p>
+        </div>
+        <div class="m-service2">
+            <div class="service-name">
+                <img src="img/smartphone.png">
+                <p class="text-top">RESPONSIVE</p>
+                <p class="text-bottom">レスポンシブ対応</p>
+            </div>
+            <p>PC、タブレット、スマートフォンなど、異なる画面サイズに対応可能。それぞれの画面に最適な表示に調整します。</p>
+        </div>
+        <div class="m-service3">
+            <div class="service-name">
+                <img src="img/hourglass.png">
+                <p class="text-top">MAINTENANCE</p>
+                <p class="text-bottom">保守・修正</p>
+            </div>
+            <p>「作って終わり」には決して致しません。納品後も修正・変更等のアフターフォローを提供します。</p>
+        </div>
+    </div>
+    <footer class="m-service-footer">
+        2020 Shimatate's Portfolio Website
+    </footer>
+</body>
+</html>

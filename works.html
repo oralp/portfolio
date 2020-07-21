@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    <script>
+    jQuery(document).ready(function() {
+    var offset = 100;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+    if (jQuery(this).scrollTop() > offset) {
+    jQuery('.page-top').fadeIn(duration);
+    } else {
+    jQuery('.page-top').fadeOut(duration);
+    }
+    });
+
+    jQuery('.paget-op').click(function(event) {
+    event.preventDefault();
+    jQuery('html, body').animate({scrollTop: 0}, duration);
+    return false;
+    })
+    });
+    </script>
+</head>
+<body class="m-works">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="service.html">Service</a></li> -->
+            <li><a href="#">Works</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="page-top">
+        <a href="#">
+            ☝︎
+        </a>
+    </div>
+    <div class="works-head">
+        <h2>
+            <div class="works-top">WORKS</div>
+            <div class="works-bottom">実績</div>
+        </h2>
+    </div>
+    <div class="m-works-body">
+        <div class="m-works1">
+            <a id="works1"></a>
+            <div class="m-works1-content">
+                <img src="img/test1.png">
+            </div>
+            <div class="m-works1-coment">
+                <ul>
+                    <li>業務内容：　模写コーディング</li>
+                    <li>制作時間：　〇〇時間</li>
+                </ul>
+            </div>
+        </div>
+        <div class="m-works2">
+            <a id="works2"></a>
+            <div class="m-works2-content">
+                <img src="img/test2.png">
+            </div>
+            <div class="m-works2-coment">
+                <ul>
+                    <li>業務内容：　模写コーディング</li>
+                    <li>制作時間：　〇〇時間</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+        <footer class="m-works-footer">
+            2020 Shimatate's Portfolio Website
+        </footer>
+</html>
